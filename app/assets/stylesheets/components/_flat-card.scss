@@ -2,7 +2,11 @@
   background-color: white;
   margin-bottom: 16px;
   border-radius: 5px;
-  margin: 0 auto;
+  box-shadow: 3px 2px 3px rgba(0,0,0,0.1);
+}
+
+.flat-card-content {
+  background-color: #F8F9FA;
 }
 
 .flat-card-image {
@@ -11,3 +15,34 @@
   background-size: cover;
 }
 
+.flat-card-actions {
+padding: 20px 8px;
+
+}
+.more {
+  color:#007bff;
+  text-decoration: none;
+}
+
+.more:hover {
+  color: #044691;
+}
+
+
+.edit {
+  color:#ffc107;
+  text-decoration: none;
+}
+
+.edit:hover {
+  color: #d39e00;
+}
+
+.remove {
+  color: #dc3545;
+  text-decoration: none;
+}
+
+.remove:hover {
+color: #890813;
+}

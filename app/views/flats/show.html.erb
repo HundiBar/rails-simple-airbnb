@@ -14,13 +14,52 @@
     </div>
     <div class="col-4">
       <div class="flat-show-card">
-        <h1>dlfdlsfsldjflkdjsf</h1>
+        <div>
+          <h5><strong>Book this property!</strong></h5>
+        </div>
+        <form action="">
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="inputGroup-sizing-default">From:</span>
+            </div>
+            <input type="text" class="form-control" placeholder="12/07/2020" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+          </div>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="inputGroup-sizing-default">To:</span>
+            </div>
+            <input type="text" class="form-control" placeholder="18/07/2020" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+          </div>
+          <input type="submit" value="Book" class="btn btn-success btn-lg btn-block rounded mt-2" style="width: 100%">
+        </form>
       </div>
       <div class="flat-show-card">
-
+        <div class="">
+          <h4><strong>Details</strong></h4>
+        </div>
+        <div class="flex">
+          <div class="flex">
+            <i class="fas fa-users mx-2" style="font-size: 18px "></i>
+            <span><%= @flat.number_of_guests %></span>
+          </div>
+          <div class="flex">
+            <i><i class="fas fa-euro-sign mx-1"></i> </i>
+            <%= @flat.price_per_night %>
+          </div>
+        </div>
       </div>
       <div class="flat-show-card">
-
+        <div class="flex-between">
+          <div>
+            <h5><strong>Share</strong></h5>
+          </div>
+          <div>
+            <i class="fab fa-facebook-square sns"></i>
+            <i class="fab fa-twitter-square sns"></i>
+            <i class="fab fa-pinterest-square sns"></i>
+            <i class="fas fa-envelope-square sns"></i>
+          </div>
+        </div>
       </div>
     </div>
   </div>

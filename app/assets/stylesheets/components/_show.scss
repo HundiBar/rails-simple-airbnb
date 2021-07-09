@@ -4,13 +4,25 @@
   background-size: cover;
 }
 
+
 .margin-top-negative {
   margin-top: -75px;
 }
 
-.row {
+.flex {
   display: flex;
-  flex-wrap:wrap;
+  margin-right: 10px;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.sns {
+  font-size: 32px;
 }
 
 .flat-show-card {
