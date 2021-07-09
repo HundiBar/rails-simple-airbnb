@@ -2,9 +2,9 @@ class FlatsController < ApplicationController
   before_action :find_flat, only: [:edit, :update, :show, :destroy]
 
   def index
-    if params[:query].present?
-      @query = params[:query]
-      @flats = Flat.where("name LIKE ?", "%#{params[:query]}%")
+    if params[:search].present?
+      @query = params[:search]
+      @flats = Flat.where("name LIKE ?", "%#{params[:search]}%")
       # Preventing SQL Injection and Database error for
       # unknown characters
     else
